@@ -1,10 +1,33 @@
 <script>
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
+  import Navbar from './lib/Navbar.svelte'
+  import Card1 from './lib/Card1.svelte'
+  import Card2 from './lib/Card2.svelte'
+  import CardPic from './lib/CardPic.svelte'
+  import CardPageViews from './lib/CardPageViews.svelte'
+  import CardNotification from './lib/CardNotification.svelte'
+  import CardLogin from './lib/CardLogin.svelte'
+  import CardProgress from './lib/CardProgress.svelte'
+  import CardCheckbox from './lib/CardCheckbox.svelte'
+  import CardMenu from './lib/CardMenu.svelte'
+  import CardAlert from './lib/CardAlert.svelte'
 </script>
 
 <main>
-  <img src={logo} alt="Svelte Logo" />
+  <div class="grid grid-cols-1 gap-6 lg:p-10 xl:grid-cols-3 lg:bg-base-200 rounded-box">
+    <Navbar/>
+    <Card1/>
+    <Card2/>
+    <CardPic/>
+    <CardPageViews/>
+    <CardNotification/>
+    <CardLogin/>
+    <CardProgress/>
+    <CardCheckbox/>
+    <CardMenu/>
+    <CardAlert/>
+  </div>
   <h1>Hello world!</h1>
 
   <Counter />
